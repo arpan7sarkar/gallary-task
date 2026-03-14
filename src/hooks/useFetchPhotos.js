@@ -11,7 +11,7 @@ const useFetchPhotos = () => {
       setError(null)
 
       try {
-        const response = await fetch('https://picsum.photos/v2/list?limit=30')
+        const response = await fetch('https://picsum.photos/v2/list?limit=30&&page=2')
 
         if (!response.ok) {
           throw new Error(`Failed to fetch photos. Status: ${response.status}`)
